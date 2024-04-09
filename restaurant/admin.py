@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import booking, menu
+from .models import Booking, Menu
 # Register your models here.
-admin.site.register(menu)
-admin.site.register(booking)
+admin.site.register(Menu)
+admin.site.register(Booking)
 # Path: littelemon\restaurant\models.py
 # Compare this snippet from littelemon\restaurant\views.py:
 # from django.shortcuts import render
@@ -13,6 +13,7 @@ admin.site.register(booking)
 #   
 # def index(request):
 #     return HttpResponse("Hello, world. You're at the restaurant index.")
+
 
 # def menu(request):
 #     menu_list = menu.objects.all()
